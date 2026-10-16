@@ -1,6 +1,6 @@
 # Site do Divisor de Listas
 
-Esta pasta contém a landing page para GitHub Pages, capturas de tela e ZIP instalável da versão 1.0.31.
+Esta pasta contém a landing page para GitHub Pages, capturas de tela e ZIP instalável da versão 1.0.31 e APK Android (beta) v1.1.0.
 
 ## Publicação
 1. Envie o projeto para um repositório público no GitHub.
@@ -9,3 +9,5 @@ Esta pasta contém a landing page para GitHub Pages, capturas de tela e ZIP inst
 4. O endereço normalmente será `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
 
 O botão de download aponta para `docs/downloads/divisor-de-listas-ligamagic-v1.0.31.zip`, então funcionará no site publicado. Atualize o arquivo e o link ao lançar novas versões. A página não afirma afiliação oficial com a LigaMagic.
+
+O app Android (beta) fica em `docs/downloads/liga-divisor-android-v1.1.0-beta.apk`; atualize o arquivo, o link e o SHA-256 em `index.html` a cada nova versão.
