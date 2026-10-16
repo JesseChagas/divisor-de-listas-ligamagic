@@ -1,0 +1,24 @@
+name: Sugerir melhoria
+description: Proponha uma melhoria para o projeto.
+title: "[Melhoria]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Qual problema a ideia resolve?
+      description: Explique o contexto e o que você gostaria de fazer.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solução sugerida
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+    validations:
+      required: false

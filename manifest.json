@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "LigaMagic • Divisor de listas",
+  "version": "1.0.31",
+  "minimum_chrome_version": "116",
+  "description": "Organize listas compartilhadas, divida o frete e encontre links de cartas em lojas compatíveis com LigaMagic.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "sidePanel",
+    "cookies",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.ligamagic.com.br/*",
+    "https://*.ligamagic.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Divisor de listas",
+    "default_popup": "panel.html"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.ligamagic.com.br/*",
+        "https://*.ligamagic.com/*"
+      ],
+      "js": [
+        "core.js",
+        "reader.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  },
+  "author": "Jessé Oliveira das Chagas",
+  "homepage_url": "https://linktr.ee/Jessechagasdev",
+  "version_name": "1.0.31 · Tutorial interativo"
+}

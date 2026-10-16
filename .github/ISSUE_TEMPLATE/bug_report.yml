@@ -1,0 +1,41 @@
+name: Relatar problema
+description: Informe um erro para ajudar a reproduzir e corrigir.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Não inclua cookies, credenciais, dados pessoais ou arquivos de sessão."
+  - type: input
+    id: version
+    attributes:
+      label: Versão da extensão
+      placeholder: "1.0.29"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Navegador e versão
+      placeholder: "Chrome / Edge ..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir
+      description: Passos numerados e objetivos.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado observado e mensagens de erro
+    validations:
+      required: true
